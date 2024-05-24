@@ -17,7 +17,7 @@ export const Comment = ({user}) => {
          <div className='py-6'>
              {
                 value && value.map((res)=>(
-                    <div className='py-3 flex items-center'>
+                    <div className='py-3 flex '>
                             <div className='w-1/6'>
                                     <div className='w-7 h-7 '>
                                             <Image src={res.image} className='w-full h-full object-cover rounded-full ' alt='pic'/>
@@ -42,7 +42,7 @@ export const Comment = ({user}) => {
 
               
 
-              <div className='w-5/6 flex items-center p-1 px-2 rounded-full shadow'>
+              <div className='w-5/6 flex items-center py-4 px-2 mb-4 rounded-full shadow'>
                    <input className='w-4/6 h-8  placeholder:ml-4 font-inter text-sm font-normal bg-none border-none outline-none' placeholder='Write comment' onChange={(e)=>setmessage(e.target.value)}/>
 
                    <div className='w-2/6 flex justify-end'>
